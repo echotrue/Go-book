@@ -6,16 +6,16 @@ package main
 import "fmt"
 
 func check(len int) int {
-	if v := 1; v > len {
-		return len
-	}
-	return 0
+    if v := 1; v > len {
+        return len
+    }
+    return 0
 }
 func main() {
-	re := check(10)
-	fmt.Println(re)
+    re := check(10)
+    fmt.Println(re)
 }
 ```
 
-如上代码:如果将 return 0 替换为 return v会报错
+如上代码:如果将 return 0 替换为 return v会报错:undefined: v
 
