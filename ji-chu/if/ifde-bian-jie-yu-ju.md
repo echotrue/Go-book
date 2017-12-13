@@ -17,5 +17,5 @@ func main() {
 }
 ```
 
-如上代码:如果将 \` return false \` 
+如上代码:如果将 return false 替换为 return v
 
