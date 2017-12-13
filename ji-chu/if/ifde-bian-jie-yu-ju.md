@@ -5,17 +5,17 @@ package main
 
 import "fmt"
 
-func check(len int) bool {
-    if v := 1; v > len {
-        return true
-    }
-    return false
+func check(len int) int {
+	if v := 1; v > len {
+		return len
+	}
+	return 0
 }
 func main() {
-    re := check(10)
-    fmt.Println(re)
+	re := check(10)
+	fmt.Println(re)
 }
 ```
 
-如上代码:如果将 return false 替换为 return v
+如上代码:如果将 return 0 替换为 return v会报错
 
