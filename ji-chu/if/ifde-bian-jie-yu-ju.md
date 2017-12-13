@@ -1,3 +1,6 @@
+
+---
+
 和for一样,if语句可以在条件之前执行一个简单的语句,由这个语句定义的变量作用域仅在if范围之内
 
 ```
@@ -16,8 +19,6 @@ func main() {
     fmt.Println(re)
 }
 ```
-
-
 
 如上代码:如果将 return 0 替换为 return v会报错:`undefined: v`
 
