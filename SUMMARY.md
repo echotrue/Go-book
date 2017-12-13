@@ -10,4 +10,5 @@
   * [for是Go的while](ji-chu/forxun-huan-ti/forshi-go-dewhile.md)
 * [if语句](ji-chu/if.md)
   * [if的便捷语句](ji-chu/if/ifde-bian-jie-yu-ju.md)
+  * [if和else](ji-chu/if/ifheelse.md)
 
