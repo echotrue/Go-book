@@ -11,4 +11,5 @@
 * [if语句](ji-chu/if.md)
   * [if的便捷语句](ji-chu/if/ifde-bian-jie-yu-ju.md)
   * [if和else](ji-chu/if/ifheelse.md)
+* [switch语句](ji-chu/switchyu-ju.md)
 
