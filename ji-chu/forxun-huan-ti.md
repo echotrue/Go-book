@@ -10,3 +10,19 @@ Go 只有一种循环结构——`for`循环。
 
 如果条件表达式的值变为`false`，那么迭代将终止。
 
+```
+package main
+
+import "fmt"
+
+func main() {
+	sum := 0
+	for i := 0; i < 10; i++ {
+		sum += i
+	}
+	fmt.Println(sum)
+}
+```
+
+
+
