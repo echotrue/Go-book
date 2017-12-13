@@ -6,16 +6,16 @@ package main
 import "fmt"
 
 func check(len int) bool {
-	if v := 1; v > len {
-		return true
-	}
-	return false
+    if v := 1; v > len {
+        return true
+    }
+    return false
 }
 func main() {
-	re := check(10)
-	fmt.Println(re)
+    re := check(10)
+    fmt.Println(re)
 }
 ```
 
-
+如上代码:如果将 \` return false \` 
 
