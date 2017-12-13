@@ -3,14 +3,11 @@
   "description": "Go中文指南，本书大部分内容翻译自 Go 中文官网。",
   "language": "zh",
   "plugins": [
-    "disqus",
-    "github",
-    "editlink",
     "prism",
     "-highlight",
     "baidu",
-    "splitter",
-    "sitemap"
+    "splitter"
+    
   ],
   "pluginsConfig": {
   "prism": {
@@ -18,21 +15,8 @@
       "prismjs/themes/prism-solarizedlight.css"
     ]
     },
-    "disqus": {
-      "shortName": "webpack-handbook"
-    },
-    "github": {
-      "url": "https://github.com/zhaoda/webpack-handbook"
-    },
-    "editlink": {
-      "base": "https://github.com/zhaoda/webpack-handbook/blob/master/content",
-      "label": "编辑本页"
-    },
     "baidu": {
         "token": "a9787f0ab45d5e237bab522431d0a7ec"
-    },
-    "sitemap": {
-        "hostname": "http://zhaoda.net/"
     }
   }
 }
