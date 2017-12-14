@@ -19,3 +19,21 @@ func main() {
 
 如上代码:如果将 `return 0` 替换为 `return v`会报错:`undefined: v`
 
+
+
+```
+**[terminal]
+```
+
+```
+**[prompt foo@joe]**[path ~]**[delimiter  $ ]**[command ./myscript]
+Normal output line. Nothing special here...
+But...
+You can add some colors. What about a warning message?
+**[warning [WARNING] The color depends on the theme. Could look normal too]
+What about an error message?
+**[error [ERROR] This is not the error you are looking for]
+```
+
+
+
