@@ -3,21 +3,16 @@
   "description": "Go中文指南，本书大部分内容翻译自 Go 中文官网。",
   "language": "zh",
   "plugins": [
-    "prism",
     "baidu",
     "splitter",
     "tbfed-pagefooter",
     "anchors",
-    "alerts"
+    "alerts",
+    "ace"
   ],
   "pluginsConfig": {
     "theme-default": {
       "showLevel": true
-    },
-    "prism": {
-      "css": [
-        "prismjs/themes/prism-okaidia.css"
-      ]
     },
     "baidu": {
       "token": "a9787f0ab45d5e237bab522431d0a7ec"
