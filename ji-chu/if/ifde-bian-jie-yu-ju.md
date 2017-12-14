@@ -20,23 +20,5 @@ func main() {
 
 如上代码:如果将 `return 0` 替换为 `return v`会报错:`undefined: v`
 
-> zsdfasfdasdf
-
-&gt;**\[success\] For info**
-
-&gt;sdfasfasdf
-
-&gt;asdfasdfasfd** **
-
-```
-Success styling
-```
-
-```
->**[success] For info**
->
->Use this for success messages.
-```
-
 
 
