@@ -15,7 +15,7 @@
     },
     "terminal": {
       "copyButtons": true,
-      "fade": true,
+      "fade": false,
       "style": "classic"
     },
 
