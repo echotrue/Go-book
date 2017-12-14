@@ -22,10 +22,23 @@ func main() {
 
 
 
+
+
 ```
-**[danger] For danger**
-sadfasdfasdfasf
+Danger styling
 ```
+
+```
+
+>
+ **[danger] For danger**
+
+>
+>
+ Use this for danger messages.
+```
+
+
 
 
 
