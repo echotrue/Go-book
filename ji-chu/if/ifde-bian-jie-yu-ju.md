@@ -19,3 +19,21 @@ func main() {
 
 如上代码:如果将 `return 0` 替换为 `return v`会报错:`undefined: v`
 
+
+
+```
+
+
+{%ace edit=true, lang='c_cpp'%}
+// This is a hello world program for C.
+#include <stdio.h>
+
+int main(){
+  printf("Hello World!");
+  return 1;
+}
+{%endace%}
+```
+
+
+
