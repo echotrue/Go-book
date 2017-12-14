@@ -25,9 +25,9 @@ Danger styling
 ```
 
 ```
->**[danger] For danger**
->
->Use this for danger messages.
+**[danger] For danger**
+
+Use this for danger messages.
 ```
 
 
