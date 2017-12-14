@@ -3,20 +3,25 @@
   "description": "Go中文指南，本书大部分内容翻译自 Go 中文官网。",
   "language": "zh",
   "plugins": [
-    "prism",
     "-highlight",
     "baidu",
-    "splitter"
-    
+    "splitter",
+    "tbfed-pagefooter",
+    "terminal"
   ],
   "pluginsConfig": {
-  "prism": {
-    "css": [
-      "prismjs/themes/prism-solarizedlight.css"
-    ]
+    "theme-default": {
+      "showLevel": true
     },
+
+
     "baidu": {
-        "token": "a9787f0ab45d5e237bab522431d0a7ec"
+      "token": "a9787f0ab45d5e237bab522431d0a7ec"
+    },
+    "tbfed-pagefooter": {
+      "copyright": "&copy echotrue.com",
+      "modify_label": "该文件修订时间：",
+      "modify_format": "YYYY-MM-DD HH:mm:ss"
     }
   }
 }
