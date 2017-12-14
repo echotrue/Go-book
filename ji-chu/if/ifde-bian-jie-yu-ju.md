@@ -21,6 +21,7 @@ func main() {
 
 ```
 **[terminal]
+hello world
 ```
 
 ```
