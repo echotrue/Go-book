@@ -8,8 +8,7 @@
     "splitter",
     "tbfed-pagefooter",
     "anchors",
-    "alerts",
-    "-terminal"
+    "alerts"
   ],
   "pluginsConfig": {
     "theme-default": {
