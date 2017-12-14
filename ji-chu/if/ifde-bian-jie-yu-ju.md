@@ -22,12 +22,15 @@ func main() {
 
 zsdfasfdasdf
 
+**\[success\] For info **
+
+hello world
+
 ```
 Success styling
 ```
 
 ```
-
 >**[success] For info**
 >
 >Use this for success messages.
