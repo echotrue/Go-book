@@ -22,9 +22,11 @@ func main() {
 
 zsdfasfdasdf
 
-**\[success\] For info **
+&gt;**\[success\] For info**
 
-hello world
+&gt;sdfasfasdf
+
+&gt;asdfasdfasfd** **
 
 ```
 Success styling
