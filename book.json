@@ -7,9 +7,9 @@
     "baidu",
     "splitter",
     "tbfed-pagefooter",
-    "terminal",
     "anchors",
-    "alerts"
+    "alerts",
+    "-terminal"
   ],
   "pluginsConfig": {
     "theme-default": {
@@ -19,11 +19,6 @@
       "css": [
         "prismjs/themes/prism-okaidia.css"
       ]
-    },
-    "terminal": {
-      "copyButtons": true,
-      "fade": false,
-      "style": "classic"
     },
     "baidu": {
       "token": "a9787f0ab45d5e237bab522431d0a7ec"
