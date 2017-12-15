@@ -1,6 +1,6 @@
 # Summary
 
-[简介](ji-chu/README.md)
+* [简介](README.md)
 
 ## 包,变量和函数
 
