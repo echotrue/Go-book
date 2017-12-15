@@ -16,7 +16,7 @@ func main() {
 }
 ```
 
-> **\[info\] asdsds**
+> **\[success\] 成功! **
 
 
 
