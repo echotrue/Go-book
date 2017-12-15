@@ -5,12 +5,12 @@
   "plugins": [
     "-highlight",
     "prism",
+    "prism-themes",
     "baidu",
     "splitter",
     "tbfed-pagefooter",
     "anchors",
-    "alerts",
-    "prism-themes@^0.0.2"
+    "alerts"
   ],
   "pluginsConfig": {
     "theme-default": {
@@ -18,7 +18,7 @@
     },
     "prism": {
       "css": [
-        "prism-themes/themes/prism-atom-dark.css"
+        "prism-themes/themes/prism-xonokai.css"
       ]
     },
     "baidu": {
