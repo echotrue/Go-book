@@ -3,13 +3,14 @@
   "description": "Go中文指南，本书大部分内容翻译自 Go 中文官网。",
   "language": "zh",
   "plugins": [
+    "-highlight",
     "prism",
     "baidu",
     "splitter",
     "tbfed-pagefooter",
     "anchors",
     "alerts",
-    "ace"
+    "prism-themes@^0.0.2"
   ],
   "pluginsConfig": {
     "theme-default": {
@@ -17,7 +18,7 @@
     },
     "prism": {
       "css": [
-        "prismjs/themes/prism-okaidia.css"
+        "prism-themes/themes/prism-atom-dark.css"
       ]
     },
     "baidu": {
