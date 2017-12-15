@@ -1,9 +1,5 @@
 # Summary
 
-## 简介
-
-* [文档说明](README.md)
-
 ## 包,变量和函数
 
 * [函数](ji-chu/han-shu.md)
