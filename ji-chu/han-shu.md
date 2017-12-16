@@ -1,9 +1,12 @@
-asdfasd asd 
+#### 函数的基本格式
 
-asdf asd 
+函数可以没有参数或接受多个参数,再下面的例子中`add()`方法接受两个`int`类型的参数.并且函数返回类型是整型
 
-a
-sdf 
-a
-s 
+```
+func add(x int, y int) int {
+	return x + y
+}
+```
+
+
 
