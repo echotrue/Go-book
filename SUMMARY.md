@@ -17,7 +17,7 @@
   * [if和else](ji-chu/if/ifheelse.md)
 * [switch语句](ji-chu/switchyu-ju.md)
   * [没有条件的switch](ji-chu/switchyu-ju/mei-you-tiao-jian-de-switch.md)
-* defer
+* [defer](defer.md)
 * [指针](zhi-zhen.md)
 * [结构体](jie-gou-ti.md)
 
