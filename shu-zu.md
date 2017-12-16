@@ -45,5 +45,25 @@ a = {'1','2','3'}
     fmt.Println(arr1, arr2, arr3, arr4, arr5, arr6)
 ```
 
+#### 数组元素的访问
+
+计算长度会用Go内置函数`leng()`
+
+普通访问方式
+
+```
+for i := 0; i < len(arr); i++ {
+    fmt.Println(i, arr[i])
+}
+```
+
+通过`range`访问
+
+```
+for i, v := range arr {
+    fmt.Println(i, v)
+}
+```
+
 
 
