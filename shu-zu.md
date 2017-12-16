@@ -65,5 +65,24 @@ for i, v := range arr {
 }
 ```
 
+#### 数组值传递
+
+```
+func modify(arr [5]int){
+   arr[0] = 10
+   fmt.Println("In modify(), arr values:", arr)
+}
+
+func main(){
+    arr := [5]int{1, 2, 3, 4, 5}
+    modify(arr)
+    fmt.Println("In main(), arr values:", arr)
+}
+
+输出结果为:
+In modify(), arr values: [10 2 3 4 5]
+In main(), arr values: [1 2 3 4 5]
+```
+
 
 
