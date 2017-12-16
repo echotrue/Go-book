@@ -30,5 +30,15 @@ import "math"
 >
 > 导入多个包时使用打包导入语句\(即使用圆括号组合导入\)是更好的形式.
 
+#### 包的可见性
+
+包的可见性相当于Java中类成员的访问权限:public,private,protect.再Go语言中首字母大写的名称都可以再包外部被访问
+
+```
+fmt.Println("hello world")
+```
+
+如上:fmt包中的`Println()`方法可以被访问.
+
 
 
