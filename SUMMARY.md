@@ -4,6 +4,7 @@
 * [包](bao.md)
 * [函数](ji-chu/han-shu.md)
 * [变量](bian-liang.md)
+  * 基本类型
 * [for循环体](ji-chu/forxun-huan-ti.md)
   * [for\(续\)](ji-chu/forxun-huan-ti/for7eed29.md)
   * [for是Go的while](ji-chu/forxun-huan-ti/forshi-go-dewhile.md)
