@@ -4,6 +4,14 @@
 
 ```
 func add(x int, y int) int {
+    return x + y
+}
+```
+
+当两个或多个连续函数参数是同一类型,可以简写成如下形式
+
+```
+func add(x, y int) int {
 	return x + y
 }
 ```
