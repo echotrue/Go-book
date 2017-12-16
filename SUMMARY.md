@@ -5,6 +5,7 @@
 * [函数](ji-chu/han-shu.md)
 * [变量](bian-liang.md)
   * [基本类型](bian-liang/ji-ben-lei-xing.md)
+  * [零值](bian-liang/ling-zhi.md)
 * [for循环体](ji-chu/forxun-huan-ti.md)
   * [for\(续\)](ji-chu/forxun-huan-ti/for7eed29.md)
   * [for是Go的while](ji-chu/forxun-huan-ti/forshi-go-dewhile.md)
