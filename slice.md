@@ -27,7 +27,7 @@ var bSlice,cSlice []string//
 name := {"axlrose","slash","bobo"}
 ```
 
-* sadf 
+* 通过数组初始化
 
 #### 
 
