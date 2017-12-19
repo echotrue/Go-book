@@ -19,6 +19,9 @@ var aSlice []int//声明一个元素类型为int的slice
 var bSlice,cSlice []string//
 ```
 
+#### slice初始化
+
+* 
 #### slice 元素可以为任何类型
 
 以下是以一slice作为slice的元素:
