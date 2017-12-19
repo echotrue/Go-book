@@ -27,8 +27,7 @@ var bSlice,cSlice []string//
 name := {"axlrose","slash","bobo"}
 ```
 
-#### 
-
+* 
 #### slice 元素可以为任何类型
 
 以下是以一slice作为slice的元素:
