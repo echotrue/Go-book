@@ -12,11 +12,12 @@
 
 * slice 也并不是一个指向数组的指针,因为它有自己的数据结构
 
-一个`slice`指向一个序列的值,并且包含了长度信息.
+#### slice声明
 
-`[]T`是一个元素类型为`T`的`slice`
-
-`len(s)`返回`slice s`的长度
+```
+var aSlice []int//声明一个元素类型为int的slice
+var bSlice,cSlice []string//
+```
 
 #### slice 元素可以为任何类型
 
