@@ -1,4 +1,6 @@
-#### slice 发音\[slaɪs\]
+#### slice 发音
+
+\[slaɪs\]
 
 一个`slice`指向一个序列的值,并且包含了长度信息.
 
@@ -12,23 +14,23 @@
 
 ```
 func main() {
-	a := []string{"1"}
-	b:=[2]int{1,2}
+    a := []string{"1"}
+    b:=[2]int{1,2}
 
-	fmt.Printf("%T", a)
-	fmt.Printf("%T\n", b)
-	game := [][]string{
-		[]string{"a1", "a2", "a3"},
-		[]string{"b1", "b2", "b3"},
-		[]string{"c1", "c2", "c3"},
-	}
-	printSlice(game)
+    fmt.Printf("%T", a)
+    fmt.Printf("%T\n", b)
+    game := [][]string{
+        []string{"a1", "a2", "a3"},
+        []string{"b1", "b2", "b3"},
+        []string{"c1", "c2", "c3"},
+    }
+    printSlice(game)
 }
 
 func printSlice(s [][]string) {
-	for i := 0; i < len(s); i++ {
-		fmt.Printf("%s\n", strings.Join(s[i], "-"))
-	}
+    for i := 0; i < len(s); i++ {
+        fmt.Printf("%s\n", strings.Join(s[i], "-"))
+    }
 }
 ```
 
