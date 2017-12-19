@@ -43,6 +43,8 @@ name := {"axlrose","slash","bobo"}
 ```
 
 > **\[info\] 注释:**
+>
+> slice通过array\[begin,end\]来去获取.begin是开始的位置,end是结束的位置但是不包含end
 
 #### 
 
