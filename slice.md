@@ -29,7 +29,20 @@ name := {"axlrose","slash","bobo"}
 
 * 通过数组初始化
 
-#### 
+```
+	arr := [5]int{1, 2, 3, 4, 5}
+	var aSlice, bSlice, cSlice, dSlice []int
+	aSlice = arr[1:3]//[2 3]
+	bSlice = arr[:3]//[1 2 3]
+	cSlice = arr[3:]//[4 5]
+	dSlice = arr[:]//[1 2 3 4 5]
+	fmt.Println(aSlice)
+	fmt.Println(bSlice)
+	fmt.Println(cSlice)
+	fmt.Println(dSlice)
+```
+
+> **\[info\]**
 
 #### 
 
