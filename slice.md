@@ -80,18 +80,20 @@ func printSlice(s [][]string) {
 >
 > game是一个slice,game的类型是\[\]\[\]string.game有三个元素,game里面元素的类型则是\[\]string
 
-
-
 #### slice元素遍历\(range\)
 
 ```
 func main() {
-	aSlice := []int{1, 2, 3, 4, 5, 6}
-	for k, v := range aSlice {
-		fmt.Printf("k=%d,v=%d\n", k, v)
-	}
+    aSlice := []int{1, 2, 3, 4, 5, 6}
+    for k, v := range aSlice {
+        fmt.Printf("k=%d,v=%d\n", k, v)
+    }
 }
 ```
+
+#### slice元素动态增加\(append\)
+
+可动态增减元素是数组切片比数组更为强大的功能.与数组相比,数组切片多了一个存储能力\(capacity\)的概念,即元素个数和分配空间可以是两个不同的值.合理的设置存储能力的值,可以大大的降低数组切片内部重新分配内存和搬送内存块的频率,从而大大提高程序性能.数组切片支持Go语言内置的`cap()`函数和`len()`函数,`cap()`函数返回的是数组切片分配的空间大小,而`len()`函数返回的是数组切片中当前所存储的元素的个数.append向slice里面追加一个或者多个元素,然后返回一个和slice一样类型的slice
 
 
 
