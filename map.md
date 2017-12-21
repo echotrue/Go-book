@@ -28,11 +28,19 @@ m3 := map[string]string{
 
 ```
 for k, v := range m {
-		fmt.Println(k, v)
-	}
+        fmt.Println(k, v)
+    }
 ```
 
+#### 查找键值是否存在
 
+```
+	if v, ok := m[1]; ok {
+		fmt.Println(v)
+	} else {
+		fmt.Println("Key Not Found")
+	}
+```
 
 
 
