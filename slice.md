@@ -111,5 +111,23 @@ func main() {
     aSlice = append(aSlice, bSlice...) //等同于aSlice = append(aSlice, 4, 5, 6)
 ```
 
+#### slice内容复制
+
+```
+n1 := copy(s,a[x:y])
+```
+
+copy函数用户将内容从一个数组切片复制到另外一个数组切片,被复制的是数组元素的值而不是引用,如果两个数组切片不一样大,就会你找较小的那个数组切片的元素个数进行复制,并且返回复制的元素个数
+
+```
+aSlice := []int{1, 2, 3, 4, 5}
+    bSlice := []int{5, 4, 3}
+    copy(bSlice, aSlice) // 只会复制aSlice的前3个元素到bSlice中
+    copy(aSlice, bSlice) // 只会复制bSlice的3个元素到aSlice的前3个位置
+    slice1 := copy(s, a[:])         //说明：把a 全部的值复制到s 中
+    slice2 := copy(s, a[2:])        //说明：把指定范围的值复制到s 的开始位置
+    slice3 := copy(s[4:6], a[6:8])  //说明：把指定范围的值复制到s 的指定位置
+```
+
 
 
