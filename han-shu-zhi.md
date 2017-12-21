@@ -2,19 +2,21 @@
 
 ```
 func compute(fn func(float64, float64) float64) float64 {
-	return fn(3, 4)
+    return fn(3, 4)
 }
 
 func main() {
-	hypot := func(x, y float64) float64 {
-		return math.Sqrt(x*x + y*y)
-	}
-	fmt.Println(hypot(5, 12))
+    hypot := func(x, y float64) float64 {
+        return math.Sqrt(x*x + y*y)
+    }
+    fmt.Println(hypot(5, 12))
 
-	fmt.Println(compute(hypot))
-	fmt.Println(compute(math.Pow))
+    fmt.Println(compute(hypot))
+    fmt.Println(compute(math.Pow))
 }
 ```
+
+* compute函数的返回值类型是float64,compute函数有一个参数fn,这个参数fn的类型是一个有两个float64类型参数且返回值也是float64类型的函数.
 
 
 
