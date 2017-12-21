@@ -19,16 +19,20 @@ m2 := make(map[string]string)
 
 ```
 m3 := map[string]string{
-	"a": "aa",
-	"b": "bb",
+    "a": "aa",
+    "b": "bb",
 }
 ```
 
 #### 遍历map
 
 ```
-
+for k, v := range m {
+		fmt.Println(k, v)
+	}
 ```
+
+
 
 
 
