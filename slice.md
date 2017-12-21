@@ -50,8 +50,6 @@ name := {"axlrose","slash","bobo"}
 
 * 通过slice初始化\(同数组\)
 
-
-
 #### slice 元素可以为任何类型
 
 以下是以一slice作为slice的元素:
@@ -81,6 +79,19 @@ func printSlice(s [][]string) {
 > **\[info\] 注解**
 >
 > game是一个slice,game的类型是\[\]\[\]string.game有三个元素,game里面元素的类型则是\[\]string
+
+
+
+#### slice元素遍历\(range\)
+
+```
+func main() {
+	aSlice := []int{1, 2, 3, 4, 5, 6}
+	for k, v := range aSlice {
+		fmt.Printf("k=%d,v=%d\n", k, v)
+	}
+}
+```
 
 
 
