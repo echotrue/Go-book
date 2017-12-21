@@ -27,4 +27,5 @@
 * [slice](slice.md)
 * [map](map.md)
 * [Comma-ok断言](comma-okduan-yan.md)
+* [函数值](han-shu-zhi.md)
 
