@@ -48,7 +48,9 @@ name := {"axlrose","slash","bobo"}
 >
 > begin默认是0,end默认是数组的长度\(len\(arr\)\).
 
-#### 
+* 通过slice初始化\(同数组\)
+
+
 
 #### slice 元素可以为任何类型
 
