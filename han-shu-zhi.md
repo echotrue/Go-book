@@ -17,6 +17,7 @@ func main() {
 ```
 
 * compute函数的返回值类型是float64,compute函数有一个参数fn,这个参数fn的类型是一个有两个float64类型参数且返回值也是float64类型的函数.
+* math.Sqrt 是开方
 
 
 
