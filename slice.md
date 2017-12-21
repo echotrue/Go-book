@@ -19,6 +19,15 @@ var aSlice []int//声明一个元素类型为int的slice
 var bSlice,cSlice []string//
 ```
 
+#### 构造slice
+
+slice由函数make\(\)创建.这回分配一个全是零值的数组并且返回个slice指向这个数组
+
+```
+a := make([]int,5)
+a := make([]int,5,10)//第二个参数是slice的长度,第三个参数是slice的容量
+```
+
 #### slice初始化
 
 * 直接初始化
