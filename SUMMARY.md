@@ -29,5 +29,5 @@
 * [Comma-ok断言](comma-okduan-yan.md)
 * [函数值](han-shu-zhi.md)
   * [匿名函数](han-shu-zhi/ni-ming-han-shu.md)
-  * 闭包
+  * [闭包](han-shu-zhi/bi-bao.md)
 
