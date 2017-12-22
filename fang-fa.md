@@ -23,26 +23,26 @@ func (self Foo) Emit() {
 
 ```
 type People struct {
-	name string
-	age  int
+    name string
+    age  int
 }
 
 func (p1 *People) editName(newName string) {
-	p1.name = newName
+    p1.name = newName
 }
 
 func (p2 People) updateName(newName string) {
-	p2.name = newName
+    p2.name = newName
 }
 
 func main() {
-	//out name
-	p1 := &People{"jack", 23}
-	p1.editName("axlrose")
-	fmt.Println(p1.name)
-	p2 := People{"jack", 23}
-	p2.updateName("axlrose")
-	fmt.Println(p2.name)
+    //out name
+    p1 := &People{"jack", 23}
+    p1.editName("axlrose")
+    fmt.Println(p1.name)
+    p2 := People{"jack", 23}
+    p2.updateName("axlrose")
+    fmt.Println(p2.name)
 }
 ```
 
