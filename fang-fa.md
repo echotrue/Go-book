@@ -10,3 +10,12 @@ func (p *S) Put(v int) { p.i = v }
 
 可以在除了非本地类型（包括内建类型，比如 int）的任意类型上定义方法。然而可以为内建类型定义别名，然后就可以为别名定义方法。如
 
+```
+type Foo int // 为 int 定义别名 Foo
+func (self Foo) Emit() {
+    fmt.Printf("%v", self)
+}
+```
+
+
+
