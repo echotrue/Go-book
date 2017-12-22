@@ -8,6 +8,7 @@
   * [类型转换](bian-liang/lei-xing-zhuan-huan.md)
   * [类型推导](bian-liang/lei-xing-tui-dao.md)
   * [常量](bian-liang/chang-liang.md)
+* [数据类型](shu-ju-lei-xing.md)
 * [for循环体](ji-chu/forxun-huan-ti.md)
   * [for\(续\)](ji-chu/forxun-huan-ti/for7eed29.md)
   * [for是Go的while](ji-chu/forxun-huan-ti/forshi-go-dewhile.md)
@@ -30,6 +31,5 @@
   * [函数](han-shu-zhi.md)
   * [闭包](han-shu-zhi/bi-bao.md)
   * [匿名函数](han-shu-zhi/ni-ming-han-shu.md)
-* [方法](fang-fa.md)
 * [数据类型](shu-ju-lei-xing.md)
 
