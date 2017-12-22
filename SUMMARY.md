@@ -31,4 +31,5 @@
   * [闭包](han-shu-zhi/bi-bao.md)
   * [匿名函数](han-shu-zhi/ni-ming-han-shu.md)
 * [方法](fang-fa.md)
+* [数据类型](shu-ju-lei-xing.md)
 
