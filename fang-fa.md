@@ -21,3 +21,30 @@ func (self Foo) Emit() {
 
 接收者有两种，一种是值接收者，一种是指针接收者。顾名思义，值接收者，是接收者的类型是一个值，是一个副本，方法内部无法对其真正的接收者做更改；指针接收者，接收者的类型是一个指针，是接收者的引用，对这个引用的修改之间影响真正的接收者。像上面一样定义方法，将`user`改成`*user`就是指针接收者。
 
+```
+type People struct {
+	name string
+	age  int
+}
+
+func (p1 *People) editName(newName string) {
+	p1.name = newName
+}
+
+func (p2 People) updateName(newName string) {
+	p2.name = newName
+}
+
+func main() {
+	//out name
+	p1 := &People{"jack", 23}
+	p1.editName("axlrose")
+	fmt.Println(p1.name)
+	p2 := People{"jack", 23}
+	p2.updateName("axlrose")
+	fmt.Println(p2.name)
+}
+```
+
+
+
