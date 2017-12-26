@@ -38,3 +38,48 @@ func main() {
 
 
 
+#### 接口嵌套
+
+```
+package main
+
+import "fmt"
+
+type name interface {
+	setName(name string)
+}
+type sex interface {
+	setSex(sex string)
+}
+type dog interface {
+	name
+	sex
+	descDog()
+}
+
+type desc struct {
+	name string
+	sex  string
+}
+
+func (description *desc) setSex(sex string) {
+	description.sex = sex
+}
+func (description *desc) setName(name string) {
+	description.name = name
+}
+func (description *desc) descDog() {
+	fmt.Printf("%s's sex is %s\n", description.name, description.sex)
+}
+func main() {
+	var dogs dog
+	dogs = new(desc)
+	dogs.setSex("女")
+	dogs.setName("bly")
+	dogs.descDog()
+}
+
+```
+
+
+
