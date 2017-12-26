@@ -33,4 +33,5 @@
   * [匿名函数](han-shu-zhi/ni-ming-han-shu.md)
 * [方法](fang-fa.md)
 * [接口](jie-kou.md)
+  * [Stringer](jie-kou/stringer.md)
 
