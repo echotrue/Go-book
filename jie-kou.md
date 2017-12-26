@@ -80,7 +80,7 @@ func main() {
 
 > **\[info\] **
 >
-> dog 接口implement了name和sex接口,所以dog接口拥有了name和sex接口所有的方法.类型desc实现了dog接口.
+> dog 接口implement了name和sex接口,所以dog接口拥有了name和sex接口所有的方法.类型desc实现了dog接口.另外还有一个自己的方法descDog
 
 
 
