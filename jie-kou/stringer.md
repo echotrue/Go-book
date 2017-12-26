@@ -1,4 +1,4 @@
-一个普遍存在的接口是[`fmt`](https://go-zh.org/pkg/fmt/)包中定义的[`Stringer`](https://go-zh.org/pkg/fmt/#Stringer)。
+一个普遍存在的接口是`fmt`包中定义的`Stringer`。
 
 ```
 type Stringer interface {
