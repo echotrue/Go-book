@@ -30,3 +30,5 @@ func main() {
 
 定义了一个接口`animal`,定义了一个结构体`people`.结构体实现了结构的`desc`方法,且结构体有一个自己的方法`setName`.
 
+
+
