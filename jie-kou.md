@@ -36,8 +36,6 @@ func main() {
 
 * 一个类型可以实现多个接口。
 
-
-
 #### 接口嵌套
 
 ```
@@ -46,40 +44,41 @@ package main
 import "fmt"
 
 type name interface {
-	setName(name string)
+    setName(name string)
 }
 type sex interface {
-	setSex(sex string)
+    setSex(sex string)
 }
 type dog interface {
-	name
-	sex
-	descDog()
+    name
+    sex
+    descDog()
 }
 
 type desc struct {
-	name string
-	sex  string
+    name string
+    sex  string
 }
 
 func (description *desc) setSex(sex string) {
-	description.sex = sex
+    description.sex = sex
 }
 func (description *desc) setName(name string) {
-	description.name = name
+    description.name = name
 }
 func (description *desc) descDog() {
-	fmt.Printf("%s's sex is %s\n", description.name, description.sex)
+    fmt.Printf("%s's sex is %s\n", description.name, description.sex)
 }
 func main() {
-	var dogs dog
-	dogs = new(desc)
-	dogs.setSex("女")
-	dogs.setName("bly")
-	dogs.descDog()
+    var dogs dog
+    dogs = new(desc)
+    dogs.setSex("女")
+    dogs.setName("bly")
+    dogs.descDog()
 }
-
 ```
+
+> **\[info\] **
 
 
 
