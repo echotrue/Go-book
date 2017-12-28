@@ -38,4 +38,5 @@
   * [http.Handler接口](jie-kou/httphandlerjie-kou.md)
 * [并发](bing-fa.md)
   * [goroutines](bing-fa/goroutines.md)
+  * [并发的Clock服务](bing-fa/bing-fa-de-clock-fu-wu.md)
 
