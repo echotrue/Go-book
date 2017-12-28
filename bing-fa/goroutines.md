@@ -4,3 +4,28 @@
 
 当一个程序启动时，其主函数即在一个单独的goroutine中运行，我们叫它main goroutine。新的goroutine会用go语句来创建。在语法上，go语句是一个普通的函数或方法调用前加上关键字go。go语句会使其语句中的函数在一个新创建的goroutine中运行。而go语句本身会迅速地完成。
 
+    func main() {
+    	go spinner(100 * time.Millisecond)//routines
+    	const n = 45
+    	fibN := fib(n) // slow
+    	fmt.Printf("\rFibonacci(%d) = %d\n", n, fibN)
+    }
+
+    func spinner(delay time.Duration) {
+    	for {
+    		for _, r := range `-\|/` {
+    			fmt.Printf("\r%c", r)
+    			time.Sleep(delay)
+    		}
+    	}
+    }
+
+    func fib(x int) int {
+    	if x < 2 {
+    		return x
+    	}
+    	return fib(x-1) + fib(x-2)
+    }
+
+
+
