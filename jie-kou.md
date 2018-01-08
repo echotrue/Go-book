@@ -112,6 +112,18 @@ func main() {
 }
 ```
 
+#### 接口嵌套
+
+```
+type USB interface {
+	Name() string
+	Connect
+}
+type Connect interface {
+	Connect()
+}
+```
+
 #### 判断结构是否实现了接口
 
 ```
