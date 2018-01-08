@@ -128,5 +128,17 @@ func Disconnect(usb USB) {
 }
 ```
 
+#### 类型断言
+
+```
+func Disconnect(usb USB) {
+	if pc, ok := usb.(PhoneConnect); ok {
+		fmt.Println("Disconnect:", pc.name)
+		return
+	}
+	fmt.Println("Unknow device")
+}
+```
+
 
 
