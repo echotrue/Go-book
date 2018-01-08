@@ -171,5 +171,14 @@ func Disconnect(usb interface{}) {
 
 #### 接口类型转换
 
+```
+type Connect interface {
+	Connect()
+}
+type PhoneConnect struct {
+	name string
+}
+```
+
 
 
