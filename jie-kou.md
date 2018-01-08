@@ -183,3 +183,14 @@ type Connect interface {
 
 再接口嵌套例子中:USB可以转换为Connect类型,但是Connect类型不能转换为USB类型
 
+```
+func main() {
+	b := PhoneConnect{"phone"}
+	var a Connect
+	a=Connect(b)
+	a.Connect()
+}
+```
+
+
+
