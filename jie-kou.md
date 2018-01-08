@@ -112,7 +112,7 @@ func main() {
 }
 ```
 
-##### 判断结构是否实现了接口
+#### 判断结构是否实现了接口
 
 ```
 //修改以上代码
@@ -156,6 +156,4 @@ func Disconnect(usb interface{}) {
 ```
 
 `Disconnect`方法传入了一个空接口类型的参数`usb`,然后通过type switch判断参数usb的类型.从而做不同的处理
-
-
 
