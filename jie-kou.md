@@ -146,11 +146,12 @@ Go语言中所有的类型都实现了空接口
 
 ```
 func Disconnect(usb interface{}) {
-    if pc, ok := usb.(PhoneConnect); ok {
-        fmt.Println("Disconnect:", pc.name)
-        return
-    }
-    fmt.Println("Unknow device")
+	switch v := usb.(type) {
+	case PhoneConnect:
+		fmt.Println("Disconnect:", v.name)
+	default:
+		fmt.Println("Unknow device")
+	}
 }
 ```
 
