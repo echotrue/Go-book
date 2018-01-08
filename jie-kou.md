@@ -140,5 +140,9 @@ func Disconnect(usb USB) {
 }
 ```
 
+#### 空接口
+
+Go语言中所有的类型都实现了空接口
+
 
 
