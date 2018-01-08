@@ -173,13 +173,13 @@ func Disconnect(usb interface{}) {
 
 ```
 type USB interface {
-	Name() string
-	Connect
+    Name() string
+    Connect
 }
 type Connect interface {
-	Connect()
+    Connect()
 }
 ```
 
-再接口钱
+再接口嵌套例子中:USB可以转换为Connect类型,但是Connect类型不能转换为USB类型
 
