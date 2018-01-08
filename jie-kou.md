@@ -82,5 +82,42 @@ func main() {
 >
 > dog 接口implement了name和sex接口,所以dog接口拥有了name和sex接口所有的方法.类型desc实现了dog接口.另外还有一个自己的方法descDog
 
+#### 例:
+
+```
+package main
+
+import "fmt"
+
+type USB interface {
+	Name() string
+	Connect()
+}
+
+type PhoneConnect struct {
+	name string
+}
+
+func (pc PhoneConnect) Name() string {
+	return pc.name
+}
+
+func (pc PhoneConnect) Connect() {
+	fmt.Println("Connect:", pc.name)
+}
+
+func main() {
+	b := PhoneConnect{"phone"}
+	b.Connect()
+	Disconnect(b)
+}
+
+//判断PhoneConnect 是否实现了USB借口
+func Disconnect(usb USB) {
+	fmt.Println("Disconnect;")
+}
+
+```
+
 
 
