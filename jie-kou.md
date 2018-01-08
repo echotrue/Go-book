@@ -185,12 +185,12 @@ type Connect interface {
 
 ```
 func main() {
-	b := PhoneConnect{"phone"}
-	var a Connect
-	a=Connect(b)
-	a.Connect()
+    b := PhoneConnect{"phone"}
+    var a Connect
+    a=Connect(b)
+    a.Connect()
 }
 ```
 
-
+当再程序结尾执行a.Name\(\)则会报错
 
