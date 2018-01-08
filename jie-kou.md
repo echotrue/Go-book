@@ -116,11 +116,11 @@ func main() {
 
 ```
 type USB interface {
-	Name() string
-	Connect
+    Name() string
+    Connect
 }
 type Connect interface {
-	Connect()
+    Connect()
 }
 ```
 
@@ -168,4 +168,8 @@ func Disconnect(usb interface{}) {
 ```
 
 `Disconnect`方法传入了一个空接口类型的参数`usb`,然后通过type switch判断参数usb的类型.从而做不同的处理
+
+#### 接口类型转换
+
+
 
