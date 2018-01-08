@@ -90,33 +90,42 @@ package main
 import "fmt"
 
 type USB interface {
-	Name() string
-	Connect()
+    Name() string
+    Connect()
 }
 
 type PhoneConnect struct {
-	name string
+    name string
 }
 
 func (pc PhoneConnect) Name() string {
-	return pc.name
+    return pc.name
 }
 
 func (pc PhoneConnect) Connect() {
-	fmt.Println("Connect:", pc.name)
+    fmt.Println("Connect:", pc.name)
 }
 
 func main() {
-	b := PhoneConnect{"phone"}
-	b.Connect()
-	Disconnect(b)
+    b := PhoneConnect{"phone"}
+    b.Connect()
+}
+```
+
+##### 判断结构是否实现了接口
+
+```
+//修改以上代码
+func main() {
+    b := PhoneConnect{"phone"}
+    b.Connect()
+    Disconnect(b)
 }
 
 //判断PhoneConnect 是否实现了USB借口
 func Disconnect(usb USB) {
-	fmt.Println("Disconnect;")
+    fmt.Println("Disconnect;")
 }
-
 ```
 
 
