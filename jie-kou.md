@@ -172,13 +172,14 @@ func Disconnect(usb interface{}) {
 #### 接口类型转换
 
 ```
+type USB interface {
+	Name() string
+	Connect
+}
 type Connect interface {
 	Connect()
 }
-type PhoneConnect struct {
-	name string
-}
 ```
 
-
+再接口钱
 
