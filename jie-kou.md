@@ -145,7 +145,7 @@ func Disconnect(usb USB) {
 Go语言中所有的类型都实现了空接口
 
 ```
-func Disconnect(usb USB) {
+func Disconnect(usb interface{}) {
     if pc, ok := usb.(PhoneConnect); ok {
         fmt.Println("Disconnect:", pc.name)
         return
