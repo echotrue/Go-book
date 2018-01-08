@@ -132,11 +132,11 @@ func Disconnect(usb USB) {
 
 ```
 func Disconnect(usb USB) {
-	if pc, ok := usb.(PhoneConnect); ok {
-		fmt.Println("Disconnect:", pc.name)
-		return
-	}
-	fmt.Println("Unknow device")
+    if pc, ok := usb.(PhoneConnect); ok {
+        fmt.Println("Disconnect:", pc.name)
+        return
+    }
+    fmt.Println("Unknow device")
 }
 ```
 
