@@ -24,5 +24,18 @@ if err == nil {
 
 Scanf 扫描从标准输入中读取的文本，并将连续由空格分隔的值存储为连续的实参， 其格式由 format 决定。它返回成功扫描的条目数。若返回的条目数小于实参数， 则会报告错误原因 err。
 
+```
+	var name string
+	var age int
+	fmt.Println("Please enter your name and age: ")
+	paramsCount, err := fmt.Scanf("%s %d", &name, &age)
+	if err == nil {
+		fmt.Printf("%s's age is %d!(%d 个参数)\n", name, age, paramsCount)
+	} else {
+		fmt.Println("错误:")
+		fmt.Println(err)
+	}
+```
+
 
 
