@@ -45,5 +45,9 @@ Scanln 类似于 Scan，但它在换行符处\(只要一碰到回车就停止扫
 
 Sscan 扫描实参 string，并将连续由空格分隔的值存储为连续的实参。 换行符计为空格。它返回成功扫描的条目数。若它少于实参数，err 就会报告原因。
 
+```
+paramsCount, err := fmt.Sscan("axlrose 10 男", &name, &age)
+```
+
 
 
