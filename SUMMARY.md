@@ -40,3 +40,7 @@
   * [goroutines](bing-fa/goroutines.md)
   * [并发的Clock服务](bing-fa/bing-fa-de-clock-fu-wu.md)
 
+## 读写数据
+
+* [读取用户输入](read-input.md)
+
