@@ -42,5 +42,5 @@
 
 ## 读写数据
 
-* [读取用户输入](read-input.md)
+* [使用fmt包读取输入](read-input.md)
 
