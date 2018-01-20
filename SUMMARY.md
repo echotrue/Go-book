@@ -43,4 +43,5 @@
 ## 读写数据
 
 * [使用fmt包读取输入](read-input.md)
+* [使用bufio包读取输入](bufio-input.md)
 
