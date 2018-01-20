@@ -51,6 +51,8 @@ paramsCount, err := fmt.Sscan("axlrose 10 男", &name, &age)
 
 #### Sscanf
 
+Scanf 扫描实参 string，并将连续由空格分隔的值存储为连续的实参， 其格式由 format 决定。它返回成功解析的条目数。
+
 ```
 paramsCount, err := fmt.Sscanf("axlrose 10", "%s %d", &name, &age)
 ```
