@@ -61,5 +61,9 @@ paramsCount, err := fmt.Sscanf("axlrose 10", "%s %d", &name, &age)
 
 Sscanln 类似于 Sscan，但它在换行符处停止扫描，且最后的条目之后必须为换行符或 EOF。
 
+```
+paramsCount, err := fmt.Sscanln("axlrose 10", &name, &age)
+```
+
 
 
