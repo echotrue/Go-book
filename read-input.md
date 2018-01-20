@@ -7,11 +7,15 @@
 Scan 扫描从标准输入中读取的文本，并将连续由空格分隔的值存储为连续的实参。 换行符计为空格。它返回成功扫描的条目数。若它少于实参数，err 就会报告原因。
 
 ```
-	var name string
+ 	var name string
 	var age int
 	fmt.Println("Please enter your name and age: ")
-	fmt.Scan(&name, &age)
-	fmt.Printf("%s's age is %d!\n", name, age)
+	paramsCount, err := fmt.Scan(&name, &age)
+	if err == nil {
+		fmt.Printf("%s's age is %d!(%d 个参数)\n", name, age, paramsCount)
+	} else {
+		fmt.Println(err)
+	}
 ```
 
 
