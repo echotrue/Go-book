@@ -57,5 +57,9 @@ Scanf 扫描实参 string，并将连续由空格分隔的值存储为连续的�
 paramsCount, err := fmt.Sscanf("axlrose 10", "%s %d", &name, &age)
 ```
 
+#### Sscanln
+
+Sscanln 类似于 Sscan，但它在换行符处停止扫描，且最后的条目之后必须为换行符或 EOF。
+
 
 
