@@ -32,17 +32,21 @@ func main() {
 
 ```
 inputFile := "inter/test.txt"
-	outputFile := "new.txt"
-	buf, err := ioutil.ReadFile(inputFile)
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "File Error: %s\n", err)
-	}
-	fmt.Printf("%s", buf)
-	err = ioutil.WriteFile(outputFile, buf, 0644)
-	if err != nil {
-		panic(err.Error())
-	}
+    outputFile := "new.txt"
+    buf, err := ioutil.ReadFile(inputFile)
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "File Error: %s\n", err)
+    }
+    fmt.Printf("%s", buf)
+    err = ioutil.WriteFile(outputFile, buf, 0644)
+    if err != nil {
+        panic(err.Error())
+    }
 ```
+
+##### 按列读取文件中的数据
+
+
 
 
 
