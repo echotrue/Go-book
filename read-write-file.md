@@ -2,29 +2,29 @@
 
 ```
 func main() {
-	inputFile, inputError := os.Open("inter/test.txt")
-	if inputError != nil {
-		fmt.Printf("An error occurred on opening the inputfile\n" +
-			"Does the file exist?\n" +
-			"Have you got acces to it?\n")
-		return // exit the function on error
-	}
-	defer inputFile.Close()
+    inputFile, inputError := os.Open("inter/test.txt")
+    if inputError != nil {
+        fmt.Printf("An error occurred on opening the inputfile\n" +
+            "Does the file exist?\n" +
+            "Have you got acces to it?\n")
+        return // exit the function on error
+    }
+    defer inputFile.Close()
 
-	inputReader := bufio.NewReader(inputFile)
-	for {
-		inputString, readerError := inputReader.ReadString('\n')
+    inputReader := bufio.NewReader(inputFile)
+    for {
+        inputString, readerError := inputReader.ReadString('\n')
 
-		if inputString == "\n" {
-			continue
-		}
-		fmt.Printf("The input was: %q\n", inputString)
-		if readerError == io.EOF {
-			return
-		}
-	}
+        if inputString == "\n" {
+            continue
+        }
+        fmt.Printf("The input was: %q\n", inputString)
+        if readerError == io.EOF {
+            return
+        }
+    }
 }
 ```
 
-
+**将整个文件的内容读到一个字符串里**
 
