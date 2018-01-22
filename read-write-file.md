@@ -46,7 +46,19 @@ inputFile := "inter/test.txt"
 
 ##### 按列读取文件中的数据
 
+文件 products.txt 的内容如下：
 
+
+
+"The ABC of Go";25.5;1500
+
+"Functional Programming with Go";56;280
+
+"Go for It";45.9;356
+
+"The Go Way";55;500
+
+每行的第一个字段为 title，第二个字段为 price，第三个字段为 quantity。内容的格式基本与 示例 12.3c 的相同，除了分隔符改成了分号。请读取出文件的内容，创建一个结构用于存取一行的数据，然后使用结构的切片，并把数据打印出来。
 
 
 
