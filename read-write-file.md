@@ -30,5 +30,19 @@ func main() {
 
 如果您想这么做，可以使用 io/ioutil 包里的 ioutil.ReadFile\(\) 方法，该方法第一个返回值的类型是 \[\]byte，里面存放读取到的内容，第二个返回值是错误，如果没有错误发生，第二个返回值为 nil。请看示例 12.5。类似的，函数 WriteFile\(\) 可以将 \[\]byte 的值写入文件。
 
+```
+inputFile := "inter/test.txt"
+	outputFile := "new.txt"
+	buf, err := ioutil.ReadFile(inputFile)
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "File Error: %s\n", err)
+	}
+	fmt.Printf("%s", buf)
+	err = ioutil.WriteFile(outputFile, buf, 0644)
+	if err != nil {
+		panic(err.Error())
+	}
+```
+
 
 
