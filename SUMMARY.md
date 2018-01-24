@@ -1,10 +1,7 @@
-# Summary
+
 
 * [简介](README.md)
   * [包](bao.md)
-
----
-
 * [数据类型](shu-ju-lei-xing.md)
   * [变量](bian-liang.md)
   * [基本类型](bian-liang/ji-ben-lei-xing.md)
@@ -20,9 +17,6 @@
   * [数组](shu-zu.md)
   * [slice](slice.md)
   * [map](map.md)
-
----
-
 * 控制结构
   * [for循环体](ji-chu/forxun-huan-ti.md)
     * [for\(续\)](ji-chu/forxun-huan-ti/for7eed29.md)
@@ -34,36 +28,22 @@
     * [没有条件的switch](ji-chu/switchyu-ju/mei-you-tiao-jian-de-switch.md)
   * [defer](defer.md)
   * [Comma-ok断言](comma-okduan-yan.md)
-
----
-
 * [函数](ji-chu/han-shu.md)
   * [函数](han-shu-zhi.md)
   * [闭包](han-shu-zhi/bi-bao.md)
   * [匿名函数](han-shu-zhi/ni-ming-han-shu.md)
 * [方法](fang-fa.md)
-
----
-
 * [接口](jie-kou.md)
   * [Stringer](jie-kou/stringer.md)
   * [错误](cuo-wu.md)
   * [http.Handler接口](jie-kou/httphandlerjie-kou.md)
-
----
-
 * [并发](bing-fa.md)
   * [goroutines](bing-fa/goroutines.md)
   * [并发的Clock服务](bing-fa/bing-fa-de-clock-fu-wu.md)
-
----
-
 * 读写数据
   * [使用fmt包读取输入](read-input.md)
   * [使用bufio包读取输入](bufio-input.md)
   * [文件读写](read-write-file.md)
-  * [copy文件](copy-file.md)
+  * [copy文件](copywen-jian.md)
   * [从命令行读取参数](cong-ming-ling-xing-du-qu-can-shu.md)
-
----
 
