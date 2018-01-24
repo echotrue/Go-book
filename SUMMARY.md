@@ -29,7 +29,7 @@
   * [defer](defer.md)
   * [Comma-ok断言](comma-okduan-yan.md)
 * [函数](ji-chu/han-shu.md)
-  * [函数](function.md)
+  * [function](function.md)
   * [闭包](han-shu-zhi/bi-bao.md)
   * [匿名函数](han-shu-zhi/ni-ming-han-shu.md)
 * [方法](fang-fa.md)
