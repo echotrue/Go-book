@@ -230,8 +230,6 @@ NewWriter
 
 如果写入的东西很简单，我们可以使用`fmt.Fprintf(outputFile, “Some test data.\n”)`直接将内容写入文件。`fmt`包里的 F 开头的 Print 函数可以直接写入任何`io.Writer`，包括文件（请参考[章节12.8](https://github.com/Unknwon/the-way-to-go_ZH_CN/blob/master/eBook/12.8.md)\).
 
-
-
 ##### 习题
 
 程序中的数据结构如下，是一个包含以下字段的结构:
@@ -247,34 +245,53 @@ type Page struct {
 
 再编写一个`load`函数，接收的参数是字符串 title，该函数读取出与 title 对应的文本文件。请使用`*Page`做为参数，因为这个结构可能相当巨大，我们不想在内存中拷贝它。请使用`ioutil`包里的函数
 
-
-
 ```
 type Page struct {
-	title string
-	body  []byte
+    title string
+    body  []byte
 }
 
 func (this *Page) save() (err error) {
-	return ioutil.WriteFile(this.title, this.body, 0666)
+    return ioutil.WriteFile(this.title, this.body, 0666)
 }
 
 func (this *Page) load(title string) (err error) {
-	this.title = title
-	this.body, err = ioutil.ReadFile(this.title)
-	return err
+    this.title = title
+    this.body, err = ioutil.ReadFile(this.title)
+    return err
 }
 func main() {
-	page := Page{
-		"Page.md",
-		[]byte("# Page\n## Section1\nThis is section1."),
-	}
-	page.save()
+    page := Page{
+        "Page.md",
+        []byte("# Page\n## Section1\nThis is section1."),
+    }
+    page.save()
 
-	// load from Page.md
-	var new_page Page
-	new_page.load("Page.md")
-	fmt.Println(string(new_page.body))
+    // load from Page.md
+    var new_page Page
+    new_page.load("Page.md")
+    fmt.Println(string(new_page.body))
+}
+```
+
+##### copy文件
+
+```
+func copyFile(sourceFile, targetFile string) (written int64, err error) {
+	from, err := os.Open(sourceFile)
+	if err != nil {
+		return
+	}
+
+	defer from.Close()
+
+	toFile, err := os.OpenFile(targetFile, os.O_WRONLY|os.O_CREATE, 0666)
+	if err != nil {
+		return
+	}
+
+	defer toFile.Close()
+	return io.Copy(toFile, from)
 }
 ```
 
