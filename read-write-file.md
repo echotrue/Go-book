@@ -115,53 +115,55 @@ example 2:
 
 ```
 type Book struct {
-	title    string
-	price    float64
-	quantity int
+    title    string
+    price    float64
+    quantity int
 }
 
 func main() {
-	bk := make([]Book, 1)
-	item, err := ioutil.ReadFile("new.txt")
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "File Error: %s\n", err)
-	}
-	str := string(item)
-	newStr := strings.Split(str, "\n")
+    bk := make([]Book, 1)
+    item, err := ioutil.ReadFile("new.txt")
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "File Error: %s\n", err)
+    }
+    str := string(item)
+    newStr := strings.Split(str, "\n")
 
-	//fmt.Println(len(newStr))
+    //fmt.Println(len(newStr))
 
-	for _, strItem := range newStr {
-		//fmt.Println(strItem)//"The ABC of Go";25.5;1500
+    for _, strItem := range newStr {
+        //fmt.Println(strItem)//"The ABC of Go";25.5;1500
 
-		strSl := strings.Split(strItem, ";")
+        strSl := strings.Split(strItem, ";")
 
-		//fmt.Println(strSl)
-		book := new(Book)
-		book.title = strSl[0]
-		book.price, err = strconv.ParseFloat(strSl[1], 32)
-		if err != nil {
-			fmt.Printf("Error in file float: %v", err)
-		}
+        //fmt.Println(strSl)
+        book := new(Book)
+        book.title = strSl[0]
+        book.price, err = strconv.ParseFloat(strSl[1], 32)
+        if err != nil {
+            fmt.Printf("Error in file float: %v", err)
+        }
 
-		book.quantity, err = strconv.Atoi(strSl[2])
-		if err != nil {
-			fmt.Printf("%v", strSl[2])
-			fmt.Printf("Error in file int: %v", err)
-		}
-		if bk[0].title == "" {
-			bk[0] = *book
-		} else {
-			bk = append(bk, *book)
-		}
-	}
+        book.quantity, err = strconv.Atoi(strSl[2])
+        if err != nil {
+            fmt.Printf("%v", strSl[2])
+            fmt.Printf("Error in file int: %v", err)
+        }
+        if bk[0].title == "" {
+            bk[0] = *book
+        } else {
+            bk = append(bk, *book)
+        }
+    }
 
-	fmt.Println("We have read the following books from the file: ")
-	for _, bk := range bk {
-		fmt.Println(bk)
-	}
+    fmt.Println("We have read the following books from the file: ")
+    for _, bk := range bk {
+        fmt.Println(bk)
+    }
 }
 ```
+
+##### 写文件
 
 
 
