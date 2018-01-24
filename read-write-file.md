@@ -165,5 +165,19 @@ func main() {
 
 ##### 写文件
 
+```
+	outPutFile, outPutErr := os.OpenFile("axlrose.txt", os.O_WRONLY|os.O_CREATE, 0666)
+	if outPutErr != nil {
+		fmt.Printf("An error occurred with file opening or creation\n")
+		return
+	}
+
+	defer outPutFile.Close()
+
+	outPutWriter := bufio.NewWriter(outPutFile)
+	outPutWriter.WriteString("hello world")
+	outPutWriter.Flush()
+```
+
 
 
