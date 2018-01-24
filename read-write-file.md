@@ -166,18 +166,67 @@ func main() {
 ##### 写文件
 
 ```
-	outPutFile, outPutErr := os.OpenFile("axlrose.txt", os.O_WRONLY|os.O_CREATE, 0666)
-	if outPutErr != nil {
-		fmt.Printf("An error occurred with file opening or creation\n")
-		return
-	}
+    outPutFile, outPutErr := os.OpenFile("axlrose.txt", os.O_WRONLY|os.O_CREATE, 0666)
+    if outPutErr != nil {
+        fmt.Printf("An error occurred with file opening or creation\n")
+        return
+    }
 
-	defer outPutFile.Close()
+    defer outPutFile.Close()
 
-	outPutWriter := bufio.NewWriter(outPutFile)
-	outPutWriter.WriteString("hello world")
-	outPutWriter.Flush()
+    outPutWriter := bufio.NewWriter(outPutFile)
+    outPutWriter.WriteString("hello world")
+    outPutWriter.Flush()
 ```
 
+除了文件句柄，我们还需要`bufio`的`Writer`。我们以只写模式打开文件`output.dat`，如果文件不存在则自动创建：
 
+```
+outputFile
+, 
+outputError
+:=
+ os.
+OpenFile
+(“output.
+dat
+”, os.
+O_WRONLY
+|os.
+O_CREATE
+, 
+0666
+)
+```
+
+可以看到，`OpenFile`函数有三个参数：文件名、一个或多个标志（使用逻辑运算符“\|”连接），使用的文件权限。
+
+我们通常会用到以下标志：
+
+* `os.O_RDONLY`
+  ：只读
+* `os.O_WRONLY`
+  ：只写
+* `os.O_CREATE`
+  ：创建：如果指定文件不存在，就创建该文件。
+* `os.O_TRUNC`
+  ：截断：如果指定文件已存在，就将该文件的长度截为0。
+
+在读文件的时候，文件的权限是被忽略的，所以在使用`OpenFile`时传入的第三个参数可以用0。而在写文件时，不管是 Unix 还是 Windows，都需要使用 0666。
+
+然后，我们创建一个写入器（缓冲区）对象：
+
+```
+outputWriter
+:=
+ bufio.
+NewWriter
+(outputFile)
+```
+
+接着，使用一个 for 循环，将字符串写入缓冲区，写 10 次：`outputWriter.WriteString(outputString)`
+
+缓冲区的内容紧接着被完全写入文件：`outputWriter.Flush()`
+
+如果写入的东西很简单，我们可以使用`fmt.Fprintf(outputFile, “Some test data.\n”)`直接将内容写入文件。`fmt`包里的 F 开头的 Print 函数可以直接写入任何`io.Writer`，包括文件（请参考[章节12.8](https://github.com/Unknwon/the-way-to-go_ZH_CN/blob/master/eBook/12.8.md)\).
 
