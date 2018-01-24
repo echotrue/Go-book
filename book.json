@@ -10,7 +10,9 @@
     "splitter",
     "tbfed-pagefooter",
     "anchors",
-    "alerts"
+    "alerts",
+    "-toggle-chapters",
+    "-multipart"
   ],
   "pluginsConfig": {
     "theme-default": {

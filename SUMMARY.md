@@ -1,52 +1,65 @@
 # Summary
 
 * [简介](README.md)
-* [包](bao.md)
-* [变量](bian-liang.md)
-  * [基本类型](bian-liang/ji-ben-lei-xing.md)
-  * [零值](bian-liang/ling-zhi.md)
-  * [类型转换](bian-liang/lei-xing-zhuan-huan.md)
-  * [类型推导](bian-liang/lei-xing-tui-dao.md)
-  * [常量](bian-liang/chang-liang.md)
+  * [包](bao.md)
+
+# 数据类型
+
 * [数据类型](shu-ju-lei-xing.md)
-* [for循环体](ji-chu/forxun-huan-ti.md)
-  * [for\(续\)](ji-chu/forxun-huan-ti/for7eed29.md)
-  * [for是Go的while](ji-chu/forxun-huan-ti/forshi-go-dewhile.md)
-* [if语句](ji-chu/if.md)
-  * [if的便捷语句](ji-chu/if/ifde-bian-jie-yu-ju.md)
-  * [if和else](ji-chu/if/ifheelse.md)
-* [switch语句](ji-chu/switchyu-ju.md)
-  * [没有条件的switch](ji-chu/switchyu-ju/mei-you-tiao-jian-de-switch.md)
-* [defer](defer.md)
-* [指针](zhi-zhen.md)
-* [结构体](jie-gou-ti.md)
-  * [结构体字段](jie-gou-ti/jie-gou-ti-zi-duan.md)
-  * [结构体指针](jie-gou-ti/jie-gou-ti-zhi-zhen.md)
-  * [结构体文法](jie-gou-ti/jie-gou-ti-wen-fa.md)
-* [数组](shu-zu.md)
-* [slice](slice.md)
-* [map](map.md)
-* [Comma-ok断言](comma-okduan-yan.md)
+ * [变量](bian-liang.md)
+ * [基本类型](bian-liang/ji-ben-lei-xing.md)
+ * [零值](bian-liang/ling-zhi.md)
+ * [类型转换](bian-liang/lei-xing-zhuan-huan.md)
+ * [类型推导](bian-liang/lei-xing-tui-dao.md)
+ * [常量](bian-liang/chang-liang.md)
+
+ * [指针](zhi-zhen.md)
+ * [结构体](jie-gou-ti.md)
+   * [结构体字段](jie-gou-ti/jie-gou-ti-zi-duan.md)
+   * [结构体指针](jie-gou-ti/jie-gou-ti-zhi-zhen.md)
+   * [结构体文法](jie-gou-ti/jie-gou-ti-wen-fa.md)
+ * [数组](shu-zu.md)
+ * [slice](slice.md)
+ * [map](map.md)
+
+# 控制结构
+* [控制结构]()
+  * [for循环体](ji-chu/forxun-huan-ti.md)
+   * [for\(续\)](ji-chu/forxun-huan-ti/for7eed29.md)
+   * [for是Go的while](ji-chu/forxun-huan-ti/forshi-go-dewhile.md)
+  * [if语句](ji-chu/if.md)
+   * [if的便捷语句](ji-chu/if/ifde-bian-jie-yu-ju.md)
+   * [if和else](ji-chu/if/ifheelse.md)
+  * [switch语句](ji-chu/switchyu-ju.md)
+   * [没有条件的switch](ji-chu/switchyu-ju/mei-you-tiao-jian-de-switch.md)
+  * [defer](defer.md)
+  * [Comma-ok断言](comma-okduan-yan.md)
+
+# 函数和方法
 * [函数](ji-chu/han-shu.md)
   * [函数](han-shu-zhi.md)
   * [闭包](han-shu-zhi/bi-bao.md)
   * [匿名函数](han-shu-zhi/ni-ming-han-shu.md)
 * [方法](fang-fa.md)
+
+# 接口
 * [接口](jie-kou.md)
   * [Stringer](jie-kou/stringer.md)
   * [错误](cuo-wu.md)
   * [http.Handler接口](jie-kou/httphandlerjie-kou.md)
+
+# 并发
 * [并发](bing-fa.md)
   * [goroutines](bing-fa/goroutines.md)
   * [并发的Clock服务](bing-fa/bing-fa-de-clock-fu-wu.md)
 
-## 读写数据
-
-* [使用fmt包读取输入](read-input.md)
-* [使用bufio包读取输入](bufio-input.md)
-* [文件读写](read-write-file.md)
-* [copy文件](copy-file.md)
-* [从命令行读取参数](cong-ming-ling-xing-du-qu-can-shu.md)
+# 读写数据
+* [读写数据]()
+  * [使用fmt包读取输入](read-input.md)
+  * [使用bufio包读取输入](bufio-input.md)
+  * [文件读写](read-write-file.md)
+  * [copy文件](copy-file.md)
+  * [从命令行读取参数](cong-ming-ling-xing-du-qu-can-shu.md)
 
 # filewhere
 * [title1](filewhere/file.md)
