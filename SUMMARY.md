@@ -46,4 +46,5 @@
 * [使用bufio包读取输入](bufio-input.md)
 * [文件读写](read-write-file.md)
 * [copy文件](copy-file.md)
+* [从命令行读取参数](cong-ming-ling-xing-du-qu-can-shu.md)
 
