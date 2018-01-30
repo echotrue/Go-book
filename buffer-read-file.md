@@ -2,57 +2,37 @@
 
 参数被认为是文件名，如果文件存在的话就打印文件内容到屏幕
 
-`func cat(r *bufio.Reader) {`
+```
+func cat(r *bufio.Reader) {
+	for {
+		buf, err := r.ReadBytes('\n')
+		if err == io.EOF {
+			break
+		}
 
-`    for {`
+		fmt.Fprintf(os.Stdout, "%s", buf)
+	}
+	return
+}
 
-`        buf, err := r.ReadBytes('\n')`
+func main() {
+	flag.Parse() //解析命令行参数
+	//flag.Args()//获取参数
+	if flag.NArg() == 0 {
+		cat(bufio.NewReader(os.Stdin))
+	}
 
-`        if err == io.EOF {`
+	for i := 0; i < flag.NArg(); i++ {
+		f, err := os.Open(flag.Arg(i))
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "%s:error reading from %s: %s\n", os.Args[0], flag.Arg(i), err.Error())
+			continue
+		}
 
-`            break`
-
-`        }`
-
-`        fmt.Fprintf(os.Stdout, "%s", buf)`
-
-`    }`
-
-`    return`
-
-`}`
-
-
-
-`func main() {`
-
-`    flag.Parse() //解析命令行参数`
-
-`    //flag.Args()//获取参数`
-
-`    if flag.NArg() == 0 {`
-
-`        cat(bufio.NewReader(os.Stdin))`
-
-`    }`
-
-`    for i := 0; i < flag.NArg(); i++ {`
-
-`        f, err := os.Open(flag.Arg(i))`
-
-`        if err != nil {`
-
-`            fmt.Fprintf(os.Stderr, "%s:error reading from %s: %s\n", os.Args[0], flag.Arg(i), err.Error())`
-
-`            continue`
-
-`        }`
-
-`        cat(bufio.NewReader(f))`
-
-`    }`
-
-`}`
+		cat(bufio.NewReader(f))
+	}
+}
+```
 
 
 
