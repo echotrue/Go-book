@@ -47,5 +47,5 @@
   * [copy文件](copywen-jian.md)
   * [从命令行读取参数](cong-ming-ling-xing-du-qu-can-shu.md)
   * [用buffer读取文件](buffer-read-file.md)
-  * [read-file-into-slice](read-file-into-slice.md)
+  * [用切片读写文件](read-file-into-slice.md)
 
