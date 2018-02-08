@@ -40,11 +40,12 @@
 * [并发](bing-fa.md)
   * [goroutines](bing-fa/goroutines.md)
   * [并发的Clock服务](bing-fa/bing-fa-de-clock-fu-wu.md)
-* 读写数据
+* [读写数据](du-xie-shu-ju.md)
   * [使用fmt包读取输入](read-input.md)
   * [使用bufio包读取输入](bufio-input.md)
   * [文件读写](read-write-file.md)
   * [copy文件](copywen-jian.md)
   * [从命令行读取参数](cong-ming-ling-xing-du-qu-can-shu.md)
   * [用buffer读取文件](buffer-read-file.md)
+  * [read-file-into-slice](read-file-into-slice.md)
 
