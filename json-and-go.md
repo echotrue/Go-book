@@ -37,6 +37,7 @@ b, err := json.Marshal(m)
 > 只有可以表示为有效JSON的数据结构才会被编码
 >
 > * JSON对象只支持字符串作为键;要编码一个Go map类型，它必须是map \[string\] T（其中T是json包所支持的任何Go类型）
+> * Channel, complex, and function 类型不能被编码
 
 
 
