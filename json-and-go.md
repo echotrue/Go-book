@@ -106,5 +106,19 @@ fmt.Println("the circle's area",math.Pi*r*r)
 
 如果不知道底层类型，可以使用type...switch来决定类型
 
+```
+switch v := i.(type) {
+case int:
+    fmt.Println("twice i is", v*2)
+case float64:
+    fmt.Println("the reciprocal of i is", 1/v)
+case string:
+    h := len(v) / 2
+    fmt.Println("i swapped by halves is", v[h:]+v[:h])
+default:
+    // i isn't one of the types above
+}
+```
+
 
 
