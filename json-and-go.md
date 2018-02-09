@@ -56,5 +56,11 @@ func Unmarshal(data []byte, v interface{}) error
 var m Message
 ```
 
-并且调用json.Unmarshal方法传递一个\[\]byte类型的json数据b和一个指向m的指针
+并且调用`json.Unmarshal`方法传递一个`[]byte`类型的`json`数据b和一个指向`m`的指针
+
+```
+err:=json.Unmarshal(b,&m)
+```
+
+
 
