@@ -106,8 +106,6 @@ var f interface{}
 err := json.Unmarshal(b, &f)
 ```
 
-
-
 这个时候f里面存储了一个map结构。他们的key是string，值存储在空的interface{}里面
 
 ```
@@ -118,6 +116,37 @@ f = map[string]interface{}{
         "Gomez",
         "Morticia",
     },
+}
+```
+
+那么如何来访问这些数据呢?通过断言的方式：
+
+```
+m := f.(map[string]interface{})
+```
+
+通过断言之后，你就可以通过如下方式来访问里面的数据了
+
+```
+for k, v := range m {
+```
+
+```
+    switch vv := v.(type) {
+    case string:
+        fmt.Println(k, "is string", vv)
+    case int:
+        fmt.Println(k, "is int", vv)
+    case float64:
+        fmt.Println(k,"is float64",vv)
+    case []interface{}:
+        fmt.Println(k, "is an array:")
+        for i, u := range vv {
+            fmt.Println(i, u)
+        }
+    default:
+        fmt.Println(k, "is of a type I don't know how to handle")
+    }
 }
 ```
 
