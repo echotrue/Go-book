@@ -28,5 +28,5 @@ m := Message{"Alice", "Hello", 1294706395881547000}
 b, err := json.Marshal(m)
 ```
 
-
+如果一切正常,err为nil,b是一个包含了该json数据的\[\]byte
 
