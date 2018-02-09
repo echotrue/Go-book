@@ -86,39 +86,7 @@ Unmarshal将只会解析在目标类型中可以找到的字段。当你希望�
 
 #### Generic Json with interface{}
 
-interface{}（empty interface）描述了一个零方法的接口，每一个Go类型至少实现了0个方法，因此满足空接口。
-
-empty interface用作一个一般的容器类型
-
-```
-var i interface{}
-i = " a string"
-i = 2000
-i = 2.777
-```
-
-类型断言访问底层的具体类型
-
-```
-r:= i.(float64)
-fmt.Println("the circle's area",math.Pi*r*r)
-```
-
-如果不知道底层类型，可以使用type...switch来决定类型
-
-```
-switch v := i.(type) {
-case int:
-    fmt.Println("twice i is", v*2)
-case float64:
-    fmt.Println("the reciprocal of i is", 1/v)
-case string:
-    h := len(v) / 2
-    fmt.Println("i swapped by halves is", v[h:]+v[:h])
-default:
-    // i isn't one of the types above
-}
-```
+上面是在知道json结构的情况下来解析json，如果不知道被解析的数据的结构时又该如何解析呢？
 
 
 
