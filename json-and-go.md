@@ -99,5 +99,12 @@ Unmarshal将只会解析在目标类型中可以找到的字段。当你希望�
 
     b := []byte(`{"Name":"Wednesday","Age":6,"Parents":["Gomez","Morticia"]}`)
 
+如果我们在不知道它的结构的情况下，可以吧它解析到interface{}里面
+
+```
+var f interface{}
+err := json.Unmarshal(b, &f)
+```
+
 
 
