@@ -86,7 +86,7 @@ Unmarshal将只会解析在目标类型中可以找到的字段。当你希望�
 
 #### Generic Json with interface{}
 
-
+interface{}（empty interface）描述了一个零方法的接口，每一个Go类型至少实现了0个方法，因此满足空接口。
 
 
 
