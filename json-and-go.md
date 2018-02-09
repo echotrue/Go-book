@@ -62,5 +62,15 @@ var m Message
 err:=json.Unmarshal(b,&m)
 ```
 
+如果`b`包含匹配`m`的有效json数据。err的值为nil，来自b的数据将会被存储在结构m中，就像通过如下赋值：
+
+```
+m=Message{
+    Name:"alice",
+    Body:"hello",
+    Time:1293484739238,
+}
+```
+
 
 
