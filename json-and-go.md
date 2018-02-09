@@ -44,7 +44,7 @@ b, err := json.Marshal(m)
 
 #### 解码
 
-使用unmarshal
+使用Unmarshal
 
 ```
 func Unmarshal(data []byte, v interface{}) error
