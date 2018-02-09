@@ -16,5 +16,11 @@ type Message struct {
 }
 ```
 
+和一个Message的实例:
+
+```
+m := Message{"Alice", "Hello", 1294706395881547000}
+```
+
 
 
