@@ -32,7 +32,7 @@ b, err := json.Marshal(m)
 
     b == []byte(`{"Name":"Alice","Body":"Hello","Time":1294706395881547000}`)
 
-> \[info\] 注释
+> \[success\] 注释
 >
 > 只有可以表示为有效JSON的数据结构才会被编码
 >
