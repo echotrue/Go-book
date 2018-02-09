@@ -40,6 +40,7 @@ b, err := json.Marshal(m)
 > * Channel, complex, and function 类型不能被编码
 > * 循环数据结构不支持;他们将使Marshal进入一个无限循环
 > * 指针将被编码为它们指向的值（如果为null，则为nil
+> * json包只能访问结构类型的输出字段（以大写字母开头）。因此，只有结构的导出字段才会出现在JSON输出中
 
 
 
