@@ -155,16 +155,7 @@ for k, v := range m {
 json 包提供 Decoder 和 Encoder 类型来支持常用 JSON 数据流读写。NewDecoder 和 NewEncoder 函数分别封装了 io.Reader 和 io.Writer 接口。
 
 ```
-func
-NewDecoder
-(
-r
-io
-.
-Reader
-) *
-Decoder
-
+func NewDecoder(r io.Reader) *Decoder
 func NewEncoder(w io.Writer) *Encoder
 ```
 
