@@ -97,5 +97,12 @@ i = 2000
 i = 2.777
 ```
 
+类型断言访问底层的具体类型
+
+```
+r:= i.(float64)
+fmt.Println("the circle's area",math.Pi*r*r)
+```
+
 
 
