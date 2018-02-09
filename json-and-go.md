@@ -168,3 +168,40 @@ func (dec *Decoder) Decode(v interface{}) error
 
 来看下接口是如何对实现进行抽象的：数据结构可以是任何类型，只要其实现了某种接口，目标或源数据要能够被编码就必须实现 io.Writer 或 io.Reader 接口。由于 Go 语言中到处都实现了 Reader 和 Writer，因此 Encoder 和 Decoder 可被应用的场景非常广泛，例如读取或写入 HTTP 连接、websockets 或文件。
 
+#### 将json数据写入json文件
+
+```
+type Address struct {
+	Type    string
+	City    string
+	Country string
+}
+
+type VCard struct {
+	FirstName string
+	LastName  string
+	Addresses []*Address
+	Remark    string
+}
+
+func main() {
+	pa := &Address{"private", "Aartselaar", "Belgium"}
+	wa := &Address{"work", "Boom", "Belgium"}
+	vc := VCard{"Jan", "Kersschot", []*Address{pa, wa}, "none"}
+	// fmt.Printf("%v: \n", vc) // {Jan Kersschot [0x126d2b80 0x126d2be0] none}:
+	// JSON format:
+	js, _ := json.Marshal(vc)
+	fmt.Printf("JSON format: %s", js)
+	// using an encoder:
+	file, _ := os.OpenFile("vcard.json", os.O_CREATE|os.O_WRONLY, 0666)
+	defer file.Close()
+	enc := json.NewEncoder(file)
+	err := enc.Encode(vc)
+	if err != nil {
+		log.Println("Error in encoding json")
+	}
+}
+```
+
+
+
