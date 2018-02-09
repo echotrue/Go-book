@@ -50,5 +50,9 @@ b, err := json.Marshal(m)
 func Unmarshal(data []byte, v interface{}) error
 ```
 
+首先需要创建一个解码数据存储的地方
+
+`var m Message`
+
 
 
