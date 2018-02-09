@@ -104,5 +104,7 @@ r:= i.(float64)
 fmt.Println("the circle's area",math.Pi*r*r)
 ```
 
+如果不知道底层类型，可以使用type...switch来决定类型
+
 
 
