@@ -108,3 +108,18 @@ err := json.Unmarshal(b, &f)
 
 
 
+这个时候f里面存储了一个map结构。他们的key是string，值存储在空的interface{}里面
+
+```
+f = map[string]interface{}{
+    "Name": "Wednesday",
+    "Age":  6,
+    "Parents": []interface{}{
+        "Gomez",
+        "Morticia",
+    },
+}
+```
+
+
+
