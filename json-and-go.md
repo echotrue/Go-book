@@ -6,7 +6,7 @@
 func Marshal(v interface{}) ([]byte, error)
 ```
 
-定义一个Go的数据结构Message:
+定义一个`Go`的数据结构`Message`:
 
 ```
 type Message struct {
@@ -16,19 +16,19 @@ type Message struct {
 }
 ```
 
-和一个Message的实例:
+和一个`Message`的实例:
 
 ```
 m := Message{"Alice", "Hello", 1294706395881547000}
 ```
 
-生成json编码格式的数据:
+生成`json`编码格式的数据:
 
 ```
 b, err := json.Marshal(m)
 ```
 
-如果一切正常,err为nil,b是一个包含了该json数据的\[\]byte
+如果一切正常,`err`为`nil`,`b`是一个包含了该`json`数据的`[]byte`
 
     b == []byte(`{"Name":"Alice","Body":"Hello","Time":1294706395881547000}`)
 
@@ -44,7 +44,7 @@ b, err := json.Marshal(m)
 
 #### 解码
 
-使用Unmarshal
+使用`Unmarshal`
 
 ```
 func Unmarshal(data []byte, v interface{}) error
