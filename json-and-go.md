@@ -84,5 +84,9 @@ Unmarshal将只会解析在目标类型中可以找到的字段。当你希望�
 
 ##### 但是如果你事先不知道你的json数据结构呢？
 
+#### Generic Json with interface{}
+
+
+
 
 
