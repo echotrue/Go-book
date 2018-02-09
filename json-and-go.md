@@ -22,5 +22,11 @@ type Message struct {
 m := Message{"Alice", "Hello", 1294706395881547000}
 ```
 
+生成json编码格式的数据:
+
+```
+b, err := json.Marshal(m)
+```
+
 
 
