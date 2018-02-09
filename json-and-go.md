@@ -88,5 +88,16 @@ Unmarshal将只会解析在目标类型中可以找到的字段。当你希望�
 
 上面是在知道json结构的情况下来解析json，如果不知道被解析的数据的结构时又该如何解析呢？
 
-我们知道interface{}可以用来存储任意数据类型的对象，所以我们可以用interface{}来存储未知结构的json数据的解析结果
+我们知道interface{}可以用来存储任意数据类型的对象，所以我们可以用interface{}来存储未知结构的json数据的解析结果，JSON包中采用map\[string\]interface{}和\[\]interface{}结构来存储任意的JSON对象和数组。Go类型和JSON类型的对应关系如下
+
+* bool 代表 JSON booleans,
+* float64 代表 JSON numbers,
+* string 代表 JSON strings
+* nil 代表 JSON null.
+
+现在假设我们有如下json数据：
+
+    b := []byte(`{"Name":"Wednesday","Age":6,"Parents":["Gomez","Morticia"]}`)
+
+
 
