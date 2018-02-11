@@ -32,15 +32,15 @@ if f, err := Sqrt(-1); err != nil {
 ```
 // PathError records an error and the operation and file path that caused it.
 type PathError struct {
-	Op string    // "open", "unlink", etc.
-	Path string  // The associated file.
-	Err error  // Returned by the system call.
+    Op string    // "open", "unlink", etc.
+    Path string  // The associated file.
+    Err error  // Returned by the system call.
 }
 
 func (e *PathError) String() string {
-	return e.Op + " " + e.Path + ": "+ e.Err.Error()
+    return e.Op + " " + e.Path + ": "+ e.Err.Error()
 }
 ```
 
-
+如果有不同错误条件可能发生，那么对实际的错误使用类型断言或类型判断（type-switch）是很有用的，并且可以根据错误场景做一些补救和恢复操作。
 
