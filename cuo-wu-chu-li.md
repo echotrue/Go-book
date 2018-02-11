@@ -47,9 +47,23 @@ func (e *PathError) String() string {
 ```
 //  err != nil
 if e, ok := err.(*os.PathError); ok {
-	// remedy situation
+    // remedy situation
 }
 ```
 
 或者
+
+```
+switch err := err.(type) {
+	case ParseError:
+		PrintParseError(err)
+	case PathError:
+		PrintPathError(err)
+	...
+	default:
+		fmt.Printf("Not a special error, just %s\n", err)
+}
+```
+
+
 
