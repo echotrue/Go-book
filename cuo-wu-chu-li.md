@@ -10,5 +10,9 @@ type error interface {
 
 来中止运行。
 
+##### 定义错误
+
+
+
 
 
