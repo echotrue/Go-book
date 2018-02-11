@@ -14,3 +14,14 @@ type error interface {
 
 任何时候你需要一个新的错误类型，都可以用errors包的errors.New函数接收合适的错误信息来创建
 
+```
+func Sqrt(f float64) (float64, error) {
+	if f < 0 {
+		return 0, errors.New ("math - square root of negative number")
+	}
+   // implementation of Sqrt
+}
+```
+
+
+
