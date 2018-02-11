@@ -29,3 +29,18 @@ if f, err := Sqrt(-1); err != nil {
 
 在大部分情况下，自定义错误类型很有意义，可以包含错误信息以外的其他有用信息
 
+```
+// PathError records an error and the operation and file path that caused it.
+type PathError struct {
+	Op string    // "open", "unlink", etc.
+	Path string  // The associated file.
+	Err error  // Returned by the system call.
+}
+
+func (e *PathError) String() string {
+	return e.Op + " " + e.Path + ": "+ e.Err.Error()
+}
+```
+
+
+
