@@ -12,7 +12,5 @@ type error interface {
 
 ##### 定义错误
 
-
-
-
+任何时候你需要一个新的错误类型，都可以用errors包的errors.New函数接收合适的错误信息来创建
 
