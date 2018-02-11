@@ -23,9 +23,9 @@ func Sqrt(f float64) (float64, error) {
 }
 
 if f, err := Sqrt(-1); err != nil {
-	fmt.Printf("Error: %s\n", err)
+    fmt.Printf("Error: %s\n", err)
 }
 ```
 
-
+在大部分情况下，自定义错误类型很有意义
 
