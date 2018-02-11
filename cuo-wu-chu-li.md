@@ -44,3 +44,12 @@ func (e *PathError) String() string {
 
 如果有不同错误条件可能发生，那么对实际的错误使用类型断言或类型判断（type-switch）是很有用的，并且可以根据错误场景做一些补救和恢复操作。
 
+```
+//  err != nil
+if e, ok := err.(*os.PathError); ok {
+	// remedy situation
+}
+```
+
+或者
+
