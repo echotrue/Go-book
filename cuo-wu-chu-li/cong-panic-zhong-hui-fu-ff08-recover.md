@@ -6,3 +6,27 @@
 
 这是一个展示 panic，defer 和 recover 怎么结合使用的完整例子：
 
+```
+func badCall() {
+	panic("bad end")
+}
+
+func test() {
+	defer func() {
+		if e := recover(); e != nil {
+			fmt.Printf("Panicing %s\r\n", e)
+		}
+	}()
+	badCall()
+	fmt.Printf("After bad call\r\n") // <-- wordt niet bereikt
+}
+
+func main() {
+	fmt.Printf("Calling test\r\n")
+	test()
+	fmt.Printf("Test completed\r\n")
+}
+```
+
+
+
