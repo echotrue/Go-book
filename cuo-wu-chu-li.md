@@ -55,13 +55,13 @@ if e, ok := err.(*os.PathError); ok {
 
 ```
 switch err := err.(type) {
-	case ParseError:
-		PrintParseError(err)
-	case PathError:
-		PrintPathError(err)
-	...
-	default:
-		fmt.Printf("Not a special error, just %s\n", err)
+    case ParseError:
+        PrintParseError(err)
+    case PathError:
+        PrintPathError(err)
+    ...
+    default:
+        fmt.Printf("Not a special error, just %s\n", err)
 }
 ```
 
