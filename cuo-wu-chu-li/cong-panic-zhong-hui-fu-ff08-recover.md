@@ -4,3 +4,5 @@
 
 总结：panic 会导致栈被展开直到 defer 修饰的 recover\(\) 被调用或者程序中止。
 
+这是一个展示 panic，defer 和 recover 怎么结合使用的完整例子：
+
