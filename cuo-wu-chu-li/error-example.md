@@ -10,6 +10,8 @@
 
 当没有东西需要转换或者转换成整数失败时，这个包会 panic（在函数 fields2numbers 中）。但是可导出的 Parse 函数会从 panic 中 recover 并用所有这些信息返回一个错误给调用者。为了演示这个过程，在index.go中 调用了 parse 包；不可解析的字符串会导致错误并被打印出来。
 
+parse包：
+
 ```
 type ParseError struct {
     Index int    // The index into the space-separated list of words.
