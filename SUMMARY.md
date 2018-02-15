@@ -52,4 +52,5 @@
 * [错误处理](cuo-wu-chu-li.md)
   * [运行时异常和 panic](cuo-wu-chu-li/panic.md)
   * [从 panic 中恢复（Recover）](cuo-wu-chu-li/cong-panic-zhong-hui-fu-ff08-recover.md)
+  * [自定义包中的错误处理和 panicking](cuo-wu-chu-li/error-example.md)
 
