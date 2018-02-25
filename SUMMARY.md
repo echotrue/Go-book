@@ -40,6 +40,7 @@
 * [并发](bing-fa.md)
   * [goroutines](bing-fa/goroutines.md)
   * [并发的Clock服务](bing-fa/bing-fa-de-clock-fu-wu.md)
+  * [channel](bing-fa/channel.md)
 * [读写数据](du-xie-shu-ju.md)
   * [使用fmt包读取输入](read-input.md)
   * [使用bufio包读取输入](bufio-input.md)
