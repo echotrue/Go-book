@@ -124,3 +124,5 @@ func main() {
 
 修改c:=make\(chan int ,50\)为c:=make\(chan int\)然后对比两次输出的结果
 
+
+
