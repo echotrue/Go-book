@@ -110,17 +110,17 @@ ch :=make(chan type, value)
 
 ```
 func main() {
-	c := make(chan int, 50)
-	go func() {
-		time.Sleep(15 * 1e9)
-		x := <-c
-		fmt.Println("received", x)
-	}()
-	fmt.Println("sending", 10)
-	c <- 10
-	fmt.Println("sent", 10)
+    c := make(chan int, 50)
+    go func() {
+        time.Sleep(15 * 1e9)
+        x := <-c
+        fmt.Println("received", x)
+    }()
+    fmt.Println("sending", 10)
+    c <- 10
+    fmt.Println("sent", 10)
 }
 ```
 
-
+修改c:=make\(chan int ,50\)为c:=make\(chan int\)然后对比两次输出的结果
 
