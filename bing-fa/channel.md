@@ -8,3 +8,30 @@
 
 通道实际上是类型化消息的队列：使数据得以传输。它是先进先出（FIFO）的结构所以可以保证发送给他们的元素的顺序（有些人知道，通道可以比作 Unix shells 中的双向管道（two-way pipe））。通道也是引用类型，所以我们使用 make\(\) 函数来给它分配内存通
 
+```
+func main() {
+	ch := make(chan string)
+	go sendData(ch)
+	go getData(ch)
+	time.Sleep(1e9)
+}
+
+func sendData(ch chan string) {
+	ch <- "1"
+	ch <- "2"
+	ch <- "3"
+	ch <- "4"
+	ch <- "5"
+}
+
+func getData(ch chan string) {
+	var input string
+	for {
+		input = <-ch
+		fmt.Println(input)
+	}
+}
+```
+
+
+
