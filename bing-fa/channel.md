@@ -45,3 +45,19 @@ func getData(ch chan string) {
 
 以下例子验证了以上理论 , 一个协程在无限循环中给通道发送整数数据。不过因为没有接收者，只输出了一个数字 0
 
+```
+func main() {
+	ch := make(chan int)
+	go pump(ch)
+	fmt.Println(<-ch)
+}
+
+func pump(ch chan int) {
+	for i := 0; ; i++ {
+		ch <- i
+	}
+}
+```
+
+
+
