@@ -63,21 +63,21 @@ func pump(ch chan int) {
 
 ```
 func main() {
-	ch := make(chan int)
-	go pump(ch)
-	go suck(ch)
-	time.Sleep(1e9)
+    ch := make(chan int)
+    go pump(ch)
+    go suck(ch)
+    time.Sleep(1e9)
 }
 
 func pump(ch chan int) {
-	for i := 0; ; i++ {
-		ch <- i
-	}
+    for i := 0; ; i++ {
+        ch <- i
+    }
 }
 func suck(ch chan int) {
-	for {
-		fmt.Println(<-ch)
-	}
+    for {
+        fmt.Println(<-ch)
+    }
 }
 ```
 
