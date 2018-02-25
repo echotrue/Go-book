@@ -85,3 +85,10 @@ func suck(ch chan int) {
 
 一个无缓冲通道只能包含 1 个元素，有时显得很局限。我们给通道提供了一个缓存，可以在扩展的`make`命令中设置它的容量，如下
 
+```
+buf := 100
+ch1 := make(chan string, buf)
+```
+
+
+
