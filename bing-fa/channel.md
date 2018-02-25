@@ -61,3 +61,25 @@ func pump(ch chan int) {
 
 为通道解除阻塞定义了`suck`函数来在无限循环中读取通道
 
+```
+func main() {
+	ch := make(chan int)
+	go pump(ch)
+	go suck(ch)
+	time.Sleep(1e9)
+}
+
+func pump(ch chan int) {
+	for i := 0; ; i++ {
+		ch <- i
+	}
+}
+func suck(ch chan int) {
+	for {
+		fmt.Println(<-ch)
+	}
+}
+```
+
+
+
