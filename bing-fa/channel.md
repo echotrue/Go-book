@@ -126,8 +126,10 @@ func main() {
 
 ```
 sending 10
-sent 10 
+sent 10
 ```
+
+因为接下来main\(\)结束了,
 
 修改c:=make\(chan int ,50\)为c:=make\(chan int\)然后对比两次输出的结果
 
