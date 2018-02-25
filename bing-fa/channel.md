@@ -47,17 +47,17 @@ func getData(ch chan string) {
 
 ```
 func main() {
-	ch := make(chan int)
-	go pump(ch)
-	fmt.Println(<-ch)
+    ch := make(chan int)
+    go pump(ch)
+    fmt.Println(<-ch)
 }
 
 func pump(ch chan int) {
-	for i := 0; ; i++ {
-		ch <- i
-	}
+    for i := 0; ; i++ {
+        ch <- i
+    }
 }
 ```
 
-
+为通道解除阻塞定义了`suck`函数来在无限循环中读取通道
 
