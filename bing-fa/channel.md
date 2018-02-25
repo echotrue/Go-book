@@ -122,7 +122,12 @@ func main() {
 }
 ```
 
+以上代码会直接输出
+
+```
+sending 10
+sent 10 
+```
+
 修改c:=make\(chan int ,50\)为c:=make\(chan int\)然后对比两次输出的结果
-
-
 
