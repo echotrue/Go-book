@@ -102,5 +102,9 @@ buf 是通道可以同时容纳的元素（这里是 string）个数
 ch :=make(chan type, value)
 ```
 
+* value == 0 -&gt;synchronous, unbuffered \(阻塞）
+
+* value &gt;0 -&gt; asynchronous, buffered（非阻塞）取决于value元素
+
 
 
