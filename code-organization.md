@@ -30,3 +30,9 @@ export PATH=$PATH:$GOPATH/bin
 
 要编译并运行简单的程序，首先要选择包路径（我们在这里使用`src/echotrue/route`），并在你的工作空间内创建相应的包目录：
 
+```
+mkdir $GOPATH/src/echotrue/route
+```
+
+
+
