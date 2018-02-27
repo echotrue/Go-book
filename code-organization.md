@@ -34,5 +34,5 @@ export PATH=$PATH:$GOPATH/bin
 mkdir $GOPATH/src/echotrue/route
 ```
 
-
+并再该目录下新建一个`hello.go`的文件,简单的输出`hello world`
 
