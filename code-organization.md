@@ -34,5 +34,13 @@ export PATH=$PATH:$GOPATH/bin
 mkdir $GOPATH/src/echotrue/route
 ```
 
-并再该目录下新建一个`hello.go`的文件,简单的输出`hello world`
+并再该目录下新建一个`hello.go`的文件,简单的输出`hello world`接下来你可以用go工具构建并安装此程序了
+
+```
+go install echotrue/hello
+```
+
+你可以再系统的任何地方执行此命令,go工具会根据`GOPATH`指定的工作空间,再相应的包内找源码.你也可以进入到包目录执行`go install`这样可以省掉路径.
+
+此命令会构建`hello`命令,产生一个可执行的二进制文件,接着它会将二进制文件作为`hello`安装到工作空间的`bin`目录中.由于我们已经将`$GOPATH/bin`目录添加到`PATH`中,所以我们可以直接再命令行中输入`hello`来运行它了
 
