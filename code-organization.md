@@ -48,5 +48,5 @@ go install echotrue/hello
 
 可执行命令必须使用`package main`
 
-
+链接成单个二进制文件的所有包，其包名无需是唯一的，只有导入路径（它们的完整文件名） 才是唯一的。
 
