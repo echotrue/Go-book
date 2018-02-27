@@ -44,3 +44,9 @@ go install echotrue/hello
 
 此命令会构建`hello`命令,产生一个可执行的二进制文件,接着它会将二进制文件作为`hello`安装到工作空间的`bin`目录中.由于我们已经将`$GOPATH/bin`目录添加到`PATH`中,所以我们可以直接再命令行中输入`hello`来运行它了
 
+##### 包名
+
+可执行命令必须使用`package main`
+
+
+
